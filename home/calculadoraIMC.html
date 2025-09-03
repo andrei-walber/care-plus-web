@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Care+ IMC</title>
+
+    <!-- Bootstrap geral -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+        <!-- Responsive Navbar 
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="brand d-inline-flex align-items-center" href="/index.html">
+                        <img src="assets/header-icon.jpg" alt="Logo Care+" width="40" height="40">
+                        <span class="visually-hidden">Care+</span>
+                    </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link pill-active" href="/calculadoraIMC.html">IMC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#macronutrientes">Macronutrientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#agenda">Agenda Wellness</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">Sobre Nós</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        -->
+
+    <!-- Navbar minimal -->
+    <header class="site-header">
+        <div class="container d-flex align-items-center justify-content-between">
+            <a class="brand d-inline-flex align-items-center" href="/index.html">
+                <img src="assets/header-icon.jpg" alt="Logo Care+" width="40" height="40">
+                <span class="visually-hidden">Care+</span>
+            </a>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a class="nav-link pill-active" href="/calculadoraIMC.html">IMC</a></li>
+                    <li><a class="nav-link" href="#macronutrientes">Macronutrientes</a></li>
+                    <li><a class="nav-link" href="/teste.html">Agenda Wellness</a></li>
+                    <li><a class="nav-link" href="#sobre">Sobre Nós</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <h1 class="calc">Calcule o seu IMC</h1>
+    <form id="imcForm">
+        <label for="peso">Informe seu peso (kg):</label><br>
+            <div class="input-container">
+                <input type="number" class="inputField" placeholder="Peso" id="peso" name="peso" >
+                <span class="tooltip-text">Preencha com um numero maior que 0</span>
+            </div>
+        <br><br>
+        <label for="altura">Informe sua altura (m):</label><br>
+            <div class="input-container">
+                <input type="number" class="inputField" step="0.01" id="altura" name="altura"  placeholder="Altura" maxlength="3" value="" required>
+                <span class="tooltip-text">Preencha com um numero maior que 0</span>
+            </div>
+        <br><br>
+            <h2>O seu IMC é</h2>
+        <br><br>
+            <h2 id="resultado"></h2>
+        <br>
+            <h2 id="classificacao"></h2>
+        <br><br>
+    </form>
+
+
+    
+    <!-- footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-md-3">
+                    <div class="social-stack">
+                        <div class="social-row">
+                            <a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="col-6 col-md-3">
+                <h6>Use cases</h6>
+                <ul class="footer-list">
+                    <li><a href="#">UI design</a></li>
+                    <li><a href="#">UX design</a></li>
+                    <li><a href="#">Wireframing</a></li>
+                    <li><a href="#">Diagramming</a></li>
+                    <li><a href="#">Brainstorming</a></li>
+                    <li><a href="#">Online whiteboard</a></li>
+                    <li><a href="#">Team collaboration</a></li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <h6>Explore</h6>
+                <ul class="footer-list">
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Prototyping</a></li>
+                    <li><a href="#">Development features</a></li>
+                    <li><a href="#">Design systems</a></li>
+                    <li><a href="#">Collaboration features</a></li>
+                    <li><a href="#">Design process</a></li>
+                    <li><a href="#">FigJam</a></li>
+                </ul>
+            </div>
+
+                <div class="col-12 col-md-3">
+                    <h6>Resources</h6>
+                    <ul class="footer-list">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Best practices</a></li>
+                        <li><a href="#">Colors</a></li>
+                        <li><a href="#">Color wheel</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Developers</a></li>
+                        <li><a href="#">Resource library</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="group-id">
+                <p>Projeto Care+ — 2025</p>
+                <p>Integrantes: Andrei Walber · Lucas Brum · Muriel Lucas</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="calculadoraIMC.js"></script>
+    <script>
+        // Smooth scroll
+        $(document).on("click", "a.nav-link, .hero-actions a", function (e) {
+            const hash = this.hash;
+            if (hash) {
+                e.preventDefault();
+                $("html, body").animate({ scrollTop: $(hash).offset().top - 72 }, 700);
+            }
+        });
+    </script>
+</body>
+</html>

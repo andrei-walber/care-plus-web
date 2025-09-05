@@ -1,0 +1,57 @@
+/* ===== Header / Navbar minimal ===== */
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, .06);
+    height: 72px;
+    display: flex;
+    align-items: center;
+}
+
+.brand .logo-simbolo {
+    width: 28px;
+    height: 28px;
+    border: 2px solid var(--c-ink);
+    border-radius: 6px;
+    display: inline-block;
+    position: relative;
+}
+
+.brand .logo-simbolo::after {
+    content: "";
+    position: absolute;
+    inset: 6px 8px auto auto;
+    width: 8px;
+    height: 12px;
+    border-right: 2px solid var(--c-ink);
+    border-bottom: 2px solid var(--c-ink);
+    transform: skewY(-10deg);
+}
+
+.main-nav .nav-list {
+    display: flex;
+    gap: 28px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-link {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--c-ink);
+    padding: 8px 14px;
+    border-radius: var(--radius-pill);
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    background: rgba(0, 0, 0, .04);
+}
+
+.pill-active {
+    background: var(--c-bg);
+    border: 1px solid #E3E3E3;
+}

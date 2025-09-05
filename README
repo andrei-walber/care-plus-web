@@ -1,0 +1,5 @@
+Para rodar o site é necessário subir um servidor:
+`python3 -m http.server 5500`
+
+Acesso:
+`http://localhost:5500/pages/home/index.html`

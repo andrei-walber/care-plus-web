@@ -86,9 +86,16 @@ body {
   filter: brightness(.95)
 }
 
+.blog-container{
+  background-color: var(--c-bgd) ;
+  padding: 1rem 0 2rem 0 ;
+  margin-bottom: 2rem ;
+  margin-left: 2rem ;
+  margin-right: 2rem ;
+}
 
 .card{
-  background-color: var(--c-bgd) !important;
+  background-color: var(--c-bgd);
 }
 
 .btn-card{

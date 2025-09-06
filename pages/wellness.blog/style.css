@@ -98,53 +98,6 @@ body {
   filter: brightness(.95)
 }
 
-/* ===== Intro / 3 cards ===== */
-.intro {
-  padding: 56px 0 60px;
-}
-
-.intro-title {
-  font-weight: 700;
-  margin-bottom: .2rem;
-}
-
-.intro-sub {
-  color: var(--c-muted);
-  margin: 0 0 18px;
-}
-
-.cards-3 .info-card {
-  padding: 8px 6px 0 0;
-}
-
-.info-card i {
-  font-size: 1.4rem;
-  color: var(--c-ink);
-  margin-right: .25rem;
-}
-
-.info-card h5 {
-  font-weight: 700;
-  margin: .25rem 0 .5rem;
-}
-
-.info-card p {
-  color: var(--c-muted);
-  margin: 0;
-}
-
-/* Animação de entrada */
-.info-card {
-  opacity: 0;
-  transform: translateY(16px);
-  transition: .5s ease;
-}
-
-.info-card.show {
-  opacity: 1;
-  transform: none;
-}
-
 .card{
   background-color: var(--c-bgd) !important;
 }

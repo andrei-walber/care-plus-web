@@ -62,26 +62,19 @@ body {
   margin-bottom: 1.5rem;
 }
 
-
 .btn {
   padding: .7rem 1.2rem;
-  border-radius: var(--radius-pill);
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-flex;
+  text-color: var(--c-ink);
+  font-weight: 4rem;
   align-items: center;
   gap: .5rem;
 }
 
 .btn-light-ghost {
   background: #fff;
-  border: 1px solid var(--c-line);
   color: var(--c-ink);
 }
 
-.btn-light-ghost:hover {
-  background: #fafafa
-}
 
 .btn-dark-solid {
   background: var(--c-ink);
@@ -93,33 +86,51 @@ body {
   filter: brightness(.95)
 }
 
+
 .card{
   background-color: var(--c-bgd) !important;
 }
 
-
-.btn-link{
-  color: var(--c-ink) !important;
-  text-decoration: none !important;
-}
-.btn-link:hover {
-  text-decoration: none !important;
-  color: var(--c-ink) !important;
-}
-.btn-link:focus {
-  text-decoration: none !important;
-  color: var(--c-ink) !important;
-  box-shadow: none !important;
-}
-.btn-link:active {
-  text-decoration: none !important;
-  color: var(--c-ink) !important;
-  box-shadow: none !important;
+.btn-card{
+  font-size: 1.25 rem ;
+  color: var(--c-ink) ;
+  text-decoration: none ;
+  background-color: transparent ;
+  border: none ;
+  width: 100% ;
+  text-align: center;
+  padding: 1rem 0 0 0 ;
 }
 
-.bg-primary {
-  background-color: var(--c-bgd) !important;
-  color: var(--c-ink) !important;
+.btn-lnk{
+  font-size: 2 rem ;
+  color: var(--c-ink) ;
+  text-decoration: none ;
+}
+
+.btn-lnk:hover {
+  text-decoration: none ;
+  color: var(--c-ink) ;
+  border: 0;
+}
+
+.btn-lnk:focus {
+  text-decoration: none ;
+  color: var(--c-ink) ;
+  box-shadow: none ;
+  border: 0;
+}
+
+.btn-lnk:active {
+  text-decoration: none ;
+  color: var(--c-ink) ;
+  box-shadow: none ;
+  border: none ;
+}
+
+.background-cl {
+  background-color: var(--c-bgd) ;
+  color: var(--c-ink) ;
 }
 
 /* ===== Responsivo ===== */

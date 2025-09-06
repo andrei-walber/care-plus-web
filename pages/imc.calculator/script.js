@@ -2,6 +2,9 @@
 document.getElementById('altura').addEventListener('input', function (event) {
     event.preventDefault();
     const peso = document.getElementById('peso').value;
+    if ( document.getElementById('altura').value >= 100){
+        document.getElementById('altura').value = document.getElementById('altura').value / 100;
+    }
     const altura = document.getElementById('altura').value;
     if (altura > 0) {
         const imc = peso / (altura * altura);
@@ -40,3 +43,4 @@ document.getElementById('altura').addEventListener('input', function () {
         this.setCustomValidity('');
     }
 });    
+

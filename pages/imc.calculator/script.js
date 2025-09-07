@@ -24,9 +24,9 @@ document.getElementById('altura').addEventListener('input', function (event) {
             document.getElementById('classificacao').innerText = 'Classificação: Obesidade';
         }
 
-        resultadoContainer.style.display = 'block'; // 🔥 mostra o container
+        resultadoContainer.style.display = 'block';
     } else {
-        resultadoContainer.style.display = 'none'; // 🔥 esconde se os campos forem inválidos
+        resultadoContainer.style.display = 'none';
     }
 });
 

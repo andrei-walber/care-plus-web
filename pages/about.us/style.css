@@ -1,4 +1,3 @@
-/* ===== Design tokens ===== */
 :root {
   --c-text: #1E1E1E;
   --c-ink: #2C2C2C;
@@ -19,7 +18,6 @@ body {
   color: var(--c-text);
 }
 
-/* ===== About Us: conteúdo específico ===== */
 .about-hero {
   padding: 40px 0 24px;
 }

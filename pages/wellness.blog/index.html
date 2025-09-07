@@ -2,182 +2,187 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Projeto Care+</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projeto Care+</title>
 
-    <!-- Google Font: Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 
-    <!-- Bootstrap (usado só para grid/responsividade) -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Bootstrap Icons (para ícones) -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
 
-    <!-- CSS custom -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- CSS do header e footer -->
-    <link rel="stylesheet" href="../../components/header/style.css" />
-    <link rel="stylesheet" href="../../components/footer/style.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../../components/header/style.css" />
+  <link rel="stylesheet" href="../../components/footer/style.css" />
 </head>
 
 <body>
+  <div id="site-header"></div>
 
-    <!-- Header dinâmico -->
-    <div id="site-header"></div>
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container text-center">
+      <h1 class="hero-title">Blog Wellnes</h1>
+      <p class="hero-sub">Dicas simples de emagrecimento</p>
+      <div class="hero-actions">
+      </div>
+    </div>
+  </section>
 
-    <!-- Hero -->
-    <section class="hero">
-        <!-- Imagem: coloque sua imagem em /assets/hero.jpg -->
-        <div class="hero-bg"></div>
-        <div class="container text-center">
-            <h1 class="hero-title">Blog Wellnes</h1>
-            <p class="hero-sub">Dicas simples de emagrecimento</p>
-            <div class="hero-actions">
-            </div>
-        </div>
-    </section>
-    
 
-    <section class="blog-container"> 
+  <section class="blog-container">
 
-      <div class="card border-0">
-        <div class="card-header background-cl text-center border-0" id="headingOne">
-          <h5 class="mb-0">
-            <button class="btn-card btn-lnk collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-              Priorize alimentos naturais e minimamente processados
-            </button>
-          </h5>
-        </div>
-    
-        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" >
-          <div class="card-body background-cl text-center">
-            Coma mais frutas, legumes, verduras, grãos integrais, proteínas magras e gorduras saudáveis. Evite alimentos ultraprocessados, que geralmente são ricos em açúcares, gorduras ruins e aditivos químicos.
-          </div>
+    <div class="card border-0">
+      <div class="card-header background-cl text-center border-0" id="headingOne">
+        <h5 class="mb-0">
+          <button class="btn-card btn-lnk collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseOne">
+            Priorize alimentos naturais e minimamente processados
+          </button>
+        </h5>
+      </div>
+
+      <div id="collapseOne" class="collapse" aria-labelledby="headingOne">
+        <div class="card-body background-cl text-center">
+          Coma mais frutas, legumes, verduras, grãos integrais, proteínas magras e gorduras saudáveis. Evite alimentos
+          ultraprocessados, que geralmente são ricos em açúcares, gorduras ruins e aditivos químicos.
         </div>
       </div>
-      <div class="card border-0">
-        <div class="card-header background-cl text-center border-0" id="headingTwo">
-          <h5 class="mb-0">
-            <button class="btn-card btn-lnk collapsed quebra" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
-              Reduza o consumo de açúcar e farinhas refinadas
-            </button>
-          </h5>
-        </div>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" >
-          <div class="card-body text-center">
-            Açúcar e farinhas refinadas (como pão branco, massas e bolos) causam picos de insulina, que favorecem o acúmulo de gordura. Prefira versões integrais com moderação.
-          </div>
+    </div>
+    <div class="card border-0">
+      <div class="card-header background-cl text-center border-0" id="headingTwo">
+        <h5 class="mb-0">
+          <button class="btn-card btn-lnk collapsed quebra" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo">
+            Reduza o consumo de açúcar e farinhas refinadas
+          </button>
+        </h5>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+        <div class="card-body text-center">
+          Açúcar e farinhas refinadas (como pão branco, massas e bolos) causam picos de insulina, que favorecem o
+          acúmulo de gordura. Prefira versões integrais com moderação.
         </div>
       </div>
-      <div class="card border-0">
-        <div class="card-header background-cl text-center border-0" id="headingThree">
-          <h5 class="mb-0">
-            <button class="btn-card btn-lnk collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-              Controle o tamanho das porções
-            </button>
-          </h5>
+    </div>
+    <div class="card border-0">
+      <div class="card-header background-cl text-center border-0" id="headingThree">
+        <h5 class="mb-0">
+          <button class="btn-card btn-lnk collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+            Controle o tamanho das porções
+          </button>
+        </h5>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
+        <div class="card-body text-center">
+          Mesmo alimentos saudáveis engordam em excesso. Coma devagar, até se sentir satisfeito, não cheio. Use pratos
+          menores para ajudar no controle.
         </div>
-        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" >
-          <div class="card-body text-center">
-            Mesmo alimentos saudáveis engordam em excesso. Coma devagar, até se sentir satisfeito, não cheio. Use pratos menores para ajudar no controle.
-          </div>
-        </div>
+      </div>
       <div class="card border-0">
         <div class="card-header background-cl text-center border-0" id="headingFour">
           <h5 class="mb-0 text-black">
-            <button class="btn-card btn-lnk collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            <button class="btn-card btn-lnk collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
               Beba bastante água
             </button>
           </h5>
         </div>
-        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" >
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour">
           <div class="card-body text-center text-color-black">
-            Muitas vezes confundimos sede com fome. Além disso, a hidratação ajuda no metabolismo e na digestão. Tente beber de 2 a 3 litro por dia.
+            Muitas vezes confundimos sede com fome. Além disso, a hidratação ajuda no metabolismo e na digestão. Tente
+            beber de 2 a 3 litro por dia.
           </div>
         </div>
-      <div class="card border-0">
-        <div class="card-header background-cl text-center border-0" id="headingFive">
-          <h5 class="mb-0">
-            <button class="btn-card btn-lnk collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-              Pratique atividade física regularmente
-            </button>
-          </h5>
-        </div>
-        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" >
-          <div class="card-body text-center">
-            O ideal é combinar exercícios aeróbicos (como caminhada, corrida ou bicicleta) com musculação ou treino funcional para preservar massa magra.
-          </div>
-        </div>
-    
         <div class="card border-0">
-        <div class="card-header background-cl text-center border-0" id="headingSix">
-          <h5 class="mb-0">
-            <button class="btn-card btn-lnk collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-              Evite beliscar fora de hora
-            </button>
-          </h5>
-        </div>
-        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" >
-          <div class="card-body text-center">
-            Crie uma rotina de 3 a 6 refeições por dia e evite ficar beliscando doces ou snacks entre elas, especialmente à noite.
+          <div class="card-header background-cl text-center border-0" id="headingFive">
+            <h5 class="mb-0">
+              <button class="btn-card btn-lnk collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Pratique atividade física regularmente
+              </button>
+            </h5>
           </div>
-        </div>
-    
-        <div class="card border-0">
-        <div class="card-header background-cl text-center border-0" id="headingSeven">
-          <h5 class="mb-0">
-            <button class="btn-card btn-lnk collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-              Não corte grupos alimentares por conta própria
-            </button>
-          </h5>
-        </div>
-        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" >
-          <div class="card-body text-center">
-            Dietas muito restritivas são difíceis de manter e podem prejudicar sua saúde. O equilíbrio é mais eficaz que a proibição total.
+          <div id="collapseFive" class="collapse" aria-labelledby="headingFive">
+            <div class="card-body text-center">
+              O ideal é combinar exercícios aeróbicos (como caminhada, corrida ou bicicleta) com musculação ou treino
+              funcional para preservar massa magra.
+            </div>
           </div>
-        </div>
-    
-        <div class="card border-0">
-        <div class="card-header background-cl text-center border-0" id="headingEight">
-          <h5 class="mb-0">
-            <button class="btn-card btn-lnk collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-              Anote o que você come
-            </button>
-          </h5>
-        </div>
-        <div id="collapseEight" class="collapse" aria-labelledby="headingEight" >
-          <div class="card-body text-center">
-            Fazer um diário alimentar ajuda a ter mais consciência do que está consumindo e a identificar hábitos que precisam mudar.
-          </div>
-        </div>
-    
-        <div class="card border-0">
-        <div class="card-header background-cl text-center border-0" id="headingNine">
-          <h5 class="mb-0">
-            <button class="btn-card btn-lnk collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-              Tenha paciência e consistência
-            </button>
-          </h5>
-        </div>
-        <div id="collapseNine" class="collapse" aria-labelledby="headingNine" >
-          <div class="card-body text-center">
-            Emagrecer leva tempo. Foque em mudanças de hábitos que você possa manter a longo prazo. Fuja de soluções milagrosas.
-          </div>
-        </div>
-    </section>
 
+          <div class="card border-0">
+            <div class="card-header background-cl text-center border-0" id="headingSix">
+              <h5 class="mb-0">
+                <button class="btn-card btn-lnk collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  Evite beliscar fora de hora
+                </button>
+              </h5>
+            </div>
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix">
+              <div class="card-body text-center">
+                Crie uma rotina de 3 a 6 refeições por dia e evite ficar beliscando doces ou snacks entre elas,
+                especialmente à noite.
+              </div>
+            </div>
 
+            <div class="card border-0">
+              <div class="card-header background-cl text-center border-0" id="headingSeven">
+                <h5 class="mb-0">
+                  <button class="btn-card btn-lnk collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    Não corte grupos alimentares por conta própria
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven">
+                <div class="card-body text-center">
+                  Dietas muito restritivas são difíceis de manter e podem prejudicar sua saúde. O equilíbrio é mais
+                  eficaz que a proibição total.
+                </div>
+              </div>
 
-    <!-- Footer dinâmico -->
-    <div id="site-footer"></div>
+              <div class="card border-0">
+                <div class="card-header background-cl text-center border-0" id="headingEight">
+                  <h5 class="mb-0">
+                    <button class="btn-card btn-lnk collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                      Anote o que você come
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseEight" class="collapse" aria-labelledby="headingEight">
+                  <div class="card-body text-center">
+                    Fazer um diário alimentar ajuda a ter mais consciência do que está consumindo e a identificar
+                    hábitos que precisam mudar.
+                  </div>
+                </div>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="../../header-footer.js"></script>
-    <script src="script.js"></script>
+                <div class="card border-0">
+                  <div class="card-header background-cl text-center border-0" id="headingNine">
+                    <h5 class="mb-0">
+                      <button class="btn-card btn-lnk collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                        Tenha paciência e consistência
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseNine" class="collapse" aria-labelledby="headingNine">
+                    <div class="card-body text-center">
+                      Emagrecer leva tempo. Foque em mudanças de hábitos que você possa manter a longo prazo. Fuja de
+                      soluções milagrosas.
+                    </div>
+                  </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../../components/header-footer.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>

@@ -10,18 +10,21 @@ function loadFragment(id, path, callback) {
 
 // Função que marca o link ativo no header
 function highlightActiveLink(container) {
-    const path = window.location.pathname; // exemplo: /home/index.html
+    const pathParts = window.location.pathname.split("/").filter(Boolean);
+    const currentPath = pathParts.slice(-2).join("/");
+
     const links = container.querySelectorAll("a.nav-link");
 
     links.forEach(link => {
-        link.classList.remove("pill-active"); // limpa antes
+        link.classList.remove("pill-active");
         const href = link.getAttribute("href");
 
-        if (href && path.includes(href.replace("../", ""))) {
+        if (href && href.endsWith(currentPath)) {
             link.classList.add("pill-active");
         }
     });
 }
+
 
 // Carrega header e aplica destaque no menu
 loadFragment("site-header", "../../components/header/index.html", highlightActiveLink);

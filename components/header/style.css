@@ -55,3 +55,80 @@
     background: var(--c-bg);
     border: 1px solid #E3E3E3;
 }
+
+/* Botão hambúrguer */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--c-ink);
+    cursor: pointer;
+}
+
+/* Modal */
+.mobile-menu {
+    display: none;
+    /* escondido por padrão */
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 200;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-menu.active {
+    display: flex;
+}
+
+.mobile-menu-content {
+    background: #fff;
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    width: 80%;
+    max-width: 320px;
+    text-align: center;
+    position: relative;
+}
+
+.mobile-menu-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-menu-content li {
+    margin: 1rem 0;
+}
+
+.mobile-menu-content a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--c-ink);
+    font-weight: 600;
+}
+
+.menu-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: var(--c-ink);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .main-nav {
+        display: none;
+        /* esconde menu normal */
+    }
+
+    .menu-toggle {
+        display: block;
+        /* mostra hambúrguer */
+    }
+}

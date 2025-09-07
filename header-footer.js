@@ -28,3 +28,13 @@ loadFragment("site-header", "../../components/header/index.html", highlightActiv
 
 // Carrega footer
 loadFragment("site-footer", "../../components/footer/index.html");
+
+// Controle do menu mobile
+document.addEventListener("click", function (e) {
+    if (e.target.closest(".menu-toggle")) {
+        document.getElementById("mobileMenu").classList.add("active");
+    }
+    if (e.target.closest(".menu-close") || e.target.id === "mobileMenu") {
+        document.getElementById("mobileMenu").classList.remove("active");
+    }
+});
